@@ -19,8 +19,8 @@ for haber in tree.findall('.//item')[:5]:
 
 # 2. MAİL ATALIM
 def mail_at(icerik):
-    gonderen = "seninmailin@gmail.com" # BURAYI DÜZELT
-    alici = "seninmailin@gmail.com"    # BURAYI DÜZELT
+    gonderen = "halilibrrmcsgr@gmail.com" # BURAYI DÜZELT
+    alici = "halilibrrmcsgr@gmail.com"    # BURAYI DÜZELT
     sifre = os.getenv('EMAIL_PASSWORD') # Kasadaki şifreyi kullanır
 
     mesaj = MIMEMultipart()
