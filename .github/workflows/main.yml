@@ -20,4 +20,3 @@ jobs:
         env:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python haber_botu.py
-        
