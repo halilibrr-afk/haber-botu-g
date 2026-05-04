@@ -32,7 +32,7 @@ def fiyat_takibi():
         return f"Hata oluştu: {e}. Amazon botu engellemiş olabilir."
 
 def mail_at(icerik):
-    gonderen = "halilibrrmcsgr" # Burayı kendi mailinle değiştir
+    gonderen = "halilibrrmcsgr@gmail.com" # Burayı kendi mailinle değiştir
     alici = "halilibrrmcsgr@gmail.com"    # Burayı kendi mailinle değiştir
     sifre = os.getenv('EMAIL_PASSWORD')
 
