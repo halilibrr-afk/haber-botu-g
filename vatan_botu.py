@@ -27,7 +27,7 @@ def vatan_fiyat_cek():
         return f"Vatan fiyatı çekilirken hata oluştu: {e}"
 
 def mail_at(icerik):
-    gonderen = "seninmailin@gmail.com" # Kendi mailin
+    gonderen = "halilibrrmcsgr@gmail.com" # Kendi mailin
     sifre = os.getenv('EMAIL_PASSWORD')
 
     msg = MIMEText(icerik)
