@@ -1,0 +1,22 @@
+name: Haber Botu Otomatik Calisma
+
+on:
+  schedule:
+    - cron: '30 12 * * *' # Türkiye saatiyle 15:30'da çalışır (15:30 - 3 saat = 12:30)
+  workflow_dispatch: # Manuel çalıştırma butonunu da aktif tutar
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Kütüphaneleri Yükle
+        run: pip install -r requirements.txt
+      - name: Botu Calistir
+        env:
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python haber_botu.py
